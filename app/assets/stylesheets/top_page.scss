@@ -1,0 +1,57 @@
+.top{
+  display: flex;
+  &__side{
+    width: 120px;
+    height: 100vh;
+    text-align: center;
+    font-size:25px;
+    color       :#99CCFF;
+    &__love{
+      padding:10px;
+      font-size:20px;
+    }
+    &__work{
+      padding:10px;
+      font-size:20px;
+    }
+    &__money{
+      padding:10px;
+      font-size:20px;
+    }
+    &__friend{
+      padding:10px;
+      font-size:20px;
+    }
+    &__school{
+      padding:10px;
+      font-size:20px;
+    }
+    &__other{
+      padding:10px;
+      font-size:20px;
+    }
+  }
+  &__consultation{
+    width: 800px;
+    margin-left: 200px;
+    &__title{
+      font-size:30px;
+      text-align: center;
+    }
+    &__text{
+      height: 50px;
+      font-size:15px;
+      color:black;
+      text-align: center;
+      border-radius: 10px 10px 10px 10px;
+      margin-bottom:10px;
+      box-shadow: 0 0 0 2px #f4cdd8;
+      &__time{
+        color:gray;
+        text-align: right;
+        padding: 10px 10px 0px 0px;
+        font-size:10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header{
+  width: 1450px;
+  height: 100px;
+  background-color:#FFFFCC;
+  display: flex;
+  &__title{
+    font-size   :60px;
+    text-align: center;
+    font-weight : bold;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    color       :#e58fa8;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    margin: 0 auto;
+    padding-left:150px;
+  }
+  &__post{
+    font-size: 20px;
+    text-align  : center;
+    padding:30px 20px 0px 20px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    color       :#e58fa8;
+  }
+  &__mypage{
+    font-size: 20px;
+    text-align  : center;
+    padding:30px 20px 0px 20px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    color       :#e58fa8;
+  }
+  &__search{
+    font-size: 20px;
+    text-align  : center;
+    padding:30px 20px 0px 20px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    color       :#e58fa8;
+  }
+}
