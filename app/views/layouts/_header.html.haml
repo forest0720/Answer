@@ -1,10 +1,6 @@
 .header
-  .header__title
-    =icon('far fa','smile')
-    Answer
-  .header__post
-    投稿
-  .header__mypage
-    マイページ
+  = link_to "Answer", root_path ,class: "header__title" 
+  = link_to "投稿", '/top_page/new' , class: "header__post"
+  = link_to "マイページ", '/top_page/show', class: "header__mypage"
   .header__search
-    検索
+    検索  

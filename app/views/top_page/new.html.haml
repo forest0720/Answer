@@ -4,6 +4,8 @@
   .post__form
     ◎内容
     .post__form__text
+      = form_for @toppage, url:'/top_page/new/' do |form|
+        = form.text_area :contents, class: 'post__form__text__area'
   .post__genre
     .post__genre__title
       ◎ジャンル
@@ -22,4 +24,4 @@
     .post__tag__tag3
       タグ3
   .post__btn
-    投稿する
+    =link_to "投稿する",'/top_page/' ,class: "post__btn__link"

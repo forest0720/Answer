@@ -1,7 +1,7 @@
 .top-page
-  .top-page__login
-    ログイン
-  .top-page__new
-    新規登録
+  .top-page__login__btn
+    = link_to "ログイン", new_user_session_path, class: "top-page__login__btn"
+  .top-page__new__btn
+    = link_to "新規登録", new_user_registration_path, class: "top-page__new__btn"
   .top-page__look
-    相談を覗いてみる
+    =link_to "相談を覗いてみる" ,'/top_page/' ,class: "top-page__look__link"

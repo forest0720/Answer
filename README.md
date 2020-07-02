@@ -1,24 +1,49 @@
-# README
+# ツール・ライブラリの名前
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Answer
 
-Things you may want to cover:
+## 簡単な説明
 
-* Ruby version
+匿名で相談の回答や質問が出来るアプリ。
 
-* System dependencies
 
-* Configuration
+## 機能
 
-* Database creation
+- 投稿機能
+- 回答機能
+- 検索機能
+- お気に入り機能
+- ログイン機能
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 使い方
 
-* Deployment instructions
+1. トップページで新規登録orログイン（登録なしでも中身は見れます）
+2. ヘッダー部分の投稿で新規投稿
+3. 相談内容のクリックで回答ページへ
 
-* ...
+## インストール
+
+```
+準備中
+$ git clone https://github.com/TomoakiTANAKA/awesome-tool
+$ cd awesome-tool
+$ sh setup.sh
+$ ~do anything~
+```
+
+## テスト
+
+準備中
+1. 使い方
+2. 使い方
+3. 使い方 
+
+
+## デプロイ
+ 
+ 準備中
+1. デプロイ
+2. デプロイ
+3. デプロイ
