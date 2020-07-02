@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root "sessions#index"
-  get 'users/index'
-  get 'posts/index'
-  get 'top_page/index'
+  root to:"sessions#index"
+  devise_for :users
+  resources :top_page, only: [:index, :new, :create, :show]
+  resources :users, only: [:edit, :update]
 end

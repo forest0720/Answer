@@ -11,7 +11,8 @@
     color       :#e58fa8;
     text-shadow: 0 0 5px rgba(0,0,0,0.4);
     margin: 0 auto;
-    padding-left:150px;
+    padding-left:300px;
+    text-decoration: none;
   }
   &__post{
     font-size: 20px;
@@ -19,6 +20,7 @@
     padding:30px 20px 0px 20px;
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
     color       :#e58fa8;
+    text-decoration: none;
   }
   &__mypage{
     font-size: 20px;
@@ -26,6 +28,7 @@
     padding:30px 20px 0px 20px;
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
     color       :#e58fa8;
+    text-decoration: none;
   }
   &__search{
     font-size: 20px;
@@ -33,5 +36,6 @@
     padding:30px 20px 0px 20px;
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
     color       :#e58fa8;
+    text-decoration: none;
   }
 }
