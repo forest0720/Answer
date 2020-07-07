@@ -16,15 +16,8 @@
   .top__consultation
     .top__consultation__title
       お悩み一覧
+  = @toppages.each do |top_page|
     .top__consultation__text
       = top_page.contents
       .top__consultation__text__time
-        20-06-19 10:38
-    .top__consultation__text
-      タイトル
-      .top__consultation__text__time
-        20-06-19 10:38
-    .top__consultation__text
-      タイトル
-      .top__consultation__text__time
-        20-06-19 10:38
+        = top_page.created_at
