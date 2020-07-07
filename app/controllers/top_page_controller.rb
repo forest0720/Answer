@@ -1,6 +1,6 @@
 class TopPageController < ApplicationController
   def index
-    # @toppage = TopPage.new
+    @toppages = TopPage.all
   end
 
   def new
@@ -8,7 +8,7 @@ class TopPageController < ApplicationController
   end
 
   def create
-    TopPage.create(TopPage.params)
+    TopPage.create(top_page_params)
     redirect_to top_page_index_path
   end
 
@@ -16,7 +16,7 @@ class TopPageController < ApplicationController
   end
 
   private
-  def TopPage_params
-    params.require(:TopPage).permit(:contents)
+  def top_page_params
+    params.require(:top_page).permit(:contents)
   end
 end

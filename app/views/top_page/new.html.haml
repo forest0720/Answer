@@ -1,27 +1,28 @@
 .post
-  .post__title
-    悩み投稿
-  .post__form
-    ◎内容
-    .post__form__text
-      = form_for @toppage, url:'/top_page/new/' do |form|
-        = form.text_area :contents, class: 'post__form__text__area'
-  .post__genre
-    .post__genre__title
-      ◎ジャンル
-    .post__genre__type
-      お金
-  .post__name
-    .post__name__title
-      ハンドルネーム
-    .post__name__type
-      mori
-  .post__tag
-    .post__tag__tag1
-      タグ１
-    .post__tag__tag2
-      タグ２
-    .post__tag__tag3
-      タグ3
-  .post__btn
-    =link_to "投稿する",'/top_page/' ,class: "post__btn__link"
+  = form_for @toppage, url:{action: 'create'} do |f|
+    .post__title
+      悩み投稿
+    .post__form
+      ◎内容
+      .post__form__text
+        = f.text_area :contents, class: 'post__form__text__area'
+    .post__genre
+      .post__genre__title
+        ◎ジャンル
+      .post__genre__type
+        お金
+    .post__name
+      .post__name__title
+        ハンドルネーム
+      .post__name__type
+        mori
+    .post__tag
+      .post__tag__tag1
+        タグ１
+      .post__tag__tag2
+        タグ２
+      .post__tag__tag3
+        タグ3
+    .post__btn
+      .post__btn__link
+        =f.submit "投稿する"
