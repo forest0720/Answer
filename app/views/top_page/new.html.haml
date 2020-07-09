@@ -1,5 +1,5 @@
 .post
-  = form_for @toppage, url:{action: 'create'} do |f|
+  = form_for @toppage, url:{controller: 'top_page', action: 'create'} do |f|
     .post__title
       悩み投稿
     .post__form
