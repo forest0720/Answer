@@ -8,7 +8,7 @@ class TopPageController < ApplicationController
   end
 
   def create
-    TopPage.create(top_page_params)
+    TopPage.create!(top_page_params)
     redirect_to top_page_index_path
   end
 
