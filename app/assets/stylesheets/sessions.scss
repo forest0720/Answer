@@ -12,13 +12,25 @@
   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
   &__login{ 
     text-align: center;
-    margin-top:70px;
     &__btn{
       width: 200px;
       background-color:#e58fa8;
       color:white;
       border-radius: 10px 10px 10px 10px;
       margin:0 auto;
+      text-decoration: none;
+      margin-top:70px;
+    }
+  }
+  &__logout{
+    text-align: center;
+    &__btn{
+      width: 200px;
+      background-color:#e58fa8;
+      border-radius: 10px 10px 10px 10px;
+      color:white;
+      margin:0 auto;
+      margin-top:50px;
       text-decoration: none;
     }
   }
