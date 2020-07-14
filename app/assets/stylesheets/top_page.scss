@@ -47,11 +47,21 @@
       border-radius: 10px 10px 10px 10px;
       margin-bottom:10px;
       box-shadow: 0 0 0 2px #f4cdd8;
-      &__time{
-        color:gray;
-        text-align: right;
+      &__main{
+        display: flex;
         padding: 10px 10px 0px 0px;
-        font-size:10px;
+        width:800px;
+        &__name{
+          color:gray; 
+          font-size:13px;
+          padding-left:15px;
+        }
+        &__time{
+          justify-content: flex-end;
+          color:gray;
+          margin-left: auto;
+          font-size:10px;
+        } 
       }
     }
   }
