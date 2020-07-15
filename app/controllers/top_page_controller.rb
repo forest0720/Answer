@@ -13,6 +13,8 @@ class TopPageController < ApplicationController
   end
 
   def show
+    @comment = Response.new
+    @comments = @toppage.comments.includes(:user)
   end
 
   private
