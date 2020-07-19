@@ -1,30 +1,15 @@
-.top
-  %ul.top__side
-    ジャンル
-    %li.top__side__love
-      恋愛
-    %li.top__side__work
-      仕事
-    %li.top__side__money
-      お金
-    %li.top__side__friend
-      友人
-    %li.top__side__school
-      学校
-    %li.top__side__other
-      その他
-  .top__consultation
-    .top__consultation__title
+.main
+  .main__consultation
+    .main__consultation__title
       お悩み一覧
-    .top__consultation__text
-      タイトル
-      .top__consultation__text__time
-        20-06-19 10:38
-    .top__consultation__text
-      タイトル
-      .top__consultation__text__time
-        20-06-19 10:38
-    .top__consultation__text
-      タイトル
-      .top__consultation__text__time
-        20-06-19 10:38
+    .main__consultation__text
+      = @toppage.contents
+  .main__comment
+    コメントフォーム
+    .main__comment__sent
+      投稿する
+      .main__comment__text
+        <コメント一覧>
+      .main__comment__main
+        .main__comment__main__name
+        .main__comment__main__form

@@ -18,7 +18,7 @@
       お悩み一覧
     - @toppages.each do |top_page|
       .top__consultation__text
-        = top_page.contents
+        = link_to top_page.contents, "/top_page/#{top_page.id}", method: :get
         .top__consultation__text__main
           .top__consultation__text__main__name
             = top_page.user.name

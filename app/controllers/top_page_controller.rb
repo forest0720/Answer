@@ -13,6 +13,9 @@ class TopPageController < ApplicationController
   end
 
   def show
+    @toppage = TopPage.find(params[:id])
+    # @comment = Response.new
+    # @comments = @toppage.comment.includes(:user)
   end
 
   private

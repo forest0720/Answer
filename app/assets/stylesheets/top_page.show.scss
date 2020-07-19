@@ -1,39 +1,9 @@
-.top{
-  display: flex;
-  &__side{
-    width: 120px;
-    height: 100vh;
-    text-align: center;
-    font-size:25px;
-    color       :#99CCFF;
-    &__love{
-      padding:10px;
-      font-size:20px;
-    }
-    &__work{
-      padding:10px;
-      font-size:20px;
-    }
-    &__money{
-      padding:10px;
-      font-size:20px;
-    }
-    &__friend{
-      padding:10px;
-      font-size:20px;
-    }
-    &__school{
-      padding:10px;
-      font-size:20px;
-    }
-    &__other{
-      padding:10px;
-      font-size:20px;
-    }
-  }
+.main{
+  width: 800px;
+  height:1000px;
+  margin: 0 auto;
   &__consultation{
-    width: 800px;
-    margin-left: 200px;
+    margin: 0 auto;
     &__title{
       font-size:30px;
       text-align: center;
@@ -53,5 +23,38 @@
         font-size:10px;
       }
     }
+  }
+  &__comment{
+    &__form{
+    height: 50px;
+    font-size:15px;
+    color:black;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin:50px 0px 0px 0px;
+    box-shadow: 0 0 0 2px #f4cdd8;
+    }
+    &__sent{
+      width: 70px;
+      margin:0 auto;
+      background-color:#e58fa8;
+      color:white;
+      text-align: center;
+      border-radius: 10px 10px 10px 10px;
+      margin-top:10px;
+      box-shadow: 0 0 0 2px #f4cdd8; 
+    }
+    &__main{
+      background-color: white;
+      display: flex;
+      margin-top:20px;
+      &__name{
+        color:pink
+      }
+      &__form{
+        margin-left: 30px;
+      }
+    }
+
   }
 }
