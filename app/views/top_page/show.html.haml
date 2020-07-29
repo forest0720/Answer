@@ -1,15 +1,20 @@
 .main
-  .main__consultation
-    .main__consultation__title
-      お悩み一覧
-    .main__consultation__text
-      = @toppage.contents
-  .main__comment
-    コメントフォーム
-    .main__comment__sent
-      投稿する
+  = form_for @comment, url:{controller: 'responses', action: 'create'}do |f|
+    .main__consultation
+      .main__consultation__title
+        お悩み一覧
+      .main__consultation__text
+        = @toppage.contents
+    .main__comment
+      = f.text_area :comment, class: "main__comment__form"
+      .main__comment__sent
+        = f.submit "投稿する"
       .main__comment__text
         <コメント一覧>
-      .main__comment__main
-        .main__comment__main__name
-        .main__comment__main__form
+      -if @comments　
+        -@comments.each do |response|
+          .main__comment__main
+            .main__comment__main__name
+              = response.user.name
+            .main__comment__main__form
+              = response.comment

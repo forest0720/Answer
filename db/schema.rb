@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200716102635) do
+ActiveRecord::Schema.define(version: 20200719083626) do
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
@@ -21,9 +21,11 @@ ActiveRecord::Schema.define(version: 20200716102635) do
   create_table "responses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
     t.integer  "tweet_id"
-    t.text     "comment",    limit: 65535, null: false
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.text     "comment",     limit: 65535, null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "top_page_id"
+    t.index ["top_page_id"], name: "index_responses_on_top_page_id", using: :btree
     t.index ["tweet_id"], name: "index_responses_on_tweet_id", using: :btree
     t.index ["user_id"], name: "index_responses_on_user_id", using: :btree
   end
@@ -59,6 +61,7 @@ ActiveRecord::Schema.define(version: 20200716102635) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "responses", "top_pages"
   add_foreign_key "top_pages", "categories"
   add_foreign_key "top_pages", "users"
   add_foreign_key "top_pages", "users", column: "users_id"
