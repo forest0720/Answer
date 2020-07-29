@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20200719083626) do
 
+
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -20,13 +21,11 @@ ActiveRecord::Schema.define(version: 20200719083626) do
 
   create_table "responses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
-    t.integer  "tweet_id"
+    t.integer  "top_page_id"
     t.text     "comment",     limit: 65535, null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
-    t.integer  "top_page_id"
     t.index ["top_page_id"], name: "index_responses_on_top_page_id", using: :btree
-    t.index ["tweet_id"], name: "index_responses_on_tweet_id", using: :btree
     t.index ["user_id"], name: "index_responses_on_user_id", using: :btree
   end
 
