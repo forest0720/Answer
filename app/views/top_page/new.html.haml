@@ -15,6 +15,7 @@
       .post__name__title
         ハンドルネーム
       .post__name__type
+        = @toppage.name
     .post__tag
       .post__tag__tag1
         タグ１
@@ -23,5 +24,4 @@
       .post__tag__tag3
         タグ3
     .post__btn
-      .post__btn__link
-        =f.submit "投稿する"
+      =f.submit "投稿する",class: 'post__btn__link'
