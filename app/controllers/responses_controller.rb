@@ -1,7 +1,7 @@
 class ResponsesController < ApplicationController
   def create
     Response.create(response_params)
-    redirect_to "/top_page/#{comment.top_page.id}"
+    redirect_to root_path
   end
 
   private
