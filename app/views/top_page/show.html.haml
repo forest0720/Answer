@@ -1,5 +1,5 @@
 .main
-  = form_for @comment, url:{controller: 'responses', action: 'create'}do |f|
+  = form_for @comment , url:{controller: 'responses', action: 'create'}do |f|
     .main__consultation
       .main__consultation__title
         お悩み一覧
@@ -7,11 +7,12 @@
         = @toppage.contents
     .main__comment
       = f.text_area :comment, class: "main__comment__form"
+      = hidden_field_tag :top_page_id, value: @toppage.id
       .main__comment__sent
         = f.submit "投稿する"
       .main__comment__text
         <コメント一覧>
-      -if @comments　
+      -if @comments
         -@comments.each do |response|
           .main__comment__main
             .main__comment__main__name
