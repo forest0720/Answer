@@ -9,6 +9,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @responses = current_user.responses
+    @responses = current_user.top_pages
   end
 end
