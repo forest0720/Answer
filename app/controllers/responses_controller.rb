@@ -1,6 +1,6 @@
 class ResponsesController < ApplicationController
   def create
-    Response.create(response_params)
+    response = Response.create(response_params)
     redirect_to root_path
   end
 

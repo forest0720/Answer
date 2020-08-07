@@ -2,7 +2,7 @@
   = link_to "Answer", root_path ,class: "header__title" 
   -if user_signed_in?
     = link_to "投稿", '/top_page/new' , class: "header__post"
-    = link_to "マイページ", '/top_page/show', class: "header__mypage"
+    = link_to "マイページ", '/users/#{current_user.id}', class: "header__mypage"
     .header__search
       検索 
   -else

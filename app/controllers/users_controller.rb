@@ -7,4 +7,8 @@ class UsersController < ApplicationController
 
   def update
   end
+
+  def show
+    @responses = current_user.responses
+  end
 end
