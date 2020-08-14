@@ -10,7 +10,13 @@
       .post__genre__title
         ◎ジャンル
       .post__genre__type
-        お金
+        %select{:helper => ""}
+          %option{:value => "1"} 恋愛
+          %option{:value => "2"} 仕事
+          %option{:value => "3"} お金
+          %option{:value => "4"} 友人
+          %option{:value => "5"} 学校
+          %option{:value => "6"} その他
     .post__name
       .post__name__title
         ハンドルネーム
