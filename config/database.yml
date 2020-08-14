@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
- username: root
-  password: <%= ENV['forest0720'] %>
-  socket: /var/lib/mysql/mysql.sock
+  username: root
+  password:
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -51,4 +51,4 @@ production:
   <<: *default
   database: Answer_production
   username: Answer
-  password: <%= ENV['ANSWER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['forest0720'] %>
