@@ -52,3 +52,4 @@ production:
   database: Answer_production
   username: Answer
   password: <%= ENV['ANSWER_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
