@@ -7,7 +7,7 @@
         = @toppage.contents
     .main__comment
       = f.text_area :comment, class: "main__comment__form"
-      = hidden_field_tag :top_page_id, value: @toppage.id
+      = hidden_field_tag :top_page_id, @toppage.id
       .main__comment__sent
         = f.submit "投稿する"
       .main__comment__text

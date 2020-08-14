@@ -1,5 +1,6 @@
 class ResponsesController < ApplicationController
   def create
+    binding.pry
     response = Response.create(response_params)
     redirect_to root_path
   end

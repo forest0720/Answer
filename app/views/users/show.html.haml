@@ -18,7 +18,7 @@
       お悩み一覧
     - @responses.each do |responses|
       .top__consultation__text
-        = link_to responses.contents, "/user/#{responses.id}", method: :get
+        = link_to responses.contents, "/top_page/#{responses.id}", method: :get
         .top__consultation__text__main
           .top__consultation__text__main__name
             = responses.user.name

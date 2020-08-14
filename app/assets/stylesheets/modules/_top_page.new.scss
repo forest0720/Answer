@@ -28,11 +28,14 @@
     &__title{
     }
     &__type{
-      border-radius: 10px 10px 10px 10px;
-      box-shadow: 0 0 0 2px #f4cdd8;
-      border: 1px solid #f78789;
-      width: 80px;
-      margin-top:5px;
+      select{
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 0 2px #f4cdd8;
+        border: 1px solid #f78789;
+        width: 80px;
+        height: 30px;
+        margin-top:5px;
+      }
     }
   }
   &__name{
